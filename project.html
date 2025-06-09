@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first_project</title>
+    <style>
+        body{
+            background-color: #f7d4b1;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .menu{
+            background-color: black;
+            width: 80%;
+            height: 80px;
+            margin: 10px auto;
+            display: flex;
+            border: 10px ridge rgb(98, 96, 96)smoke;
+            >*{
+                height: 100%;
+                /* border: 2px solid white; */
+            }
+            >figure{
+                width: 20%;
+                display: flex;
+                align-items: center;
+                padding-left: 10px;
+                >img{
+                    width: 50%;
+                }
+            }
+            >ul{
+                width: 80%;
+                display: flex;
+                justify-content: end;
+                >li{
+                    list-style: none;
+                    /* border: 2px solid red; */
+                    position: relative;
+                    &:hover{
+                        >ul{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        
+                    }
+                    >a{
+                        display: flex;
+                        height: 100%;
+                        align-items: center;
+                        text-transform: uppercase;
+                        padding-inline: 10px;
+                        color: white;
+                        transition: 0.4s;
+                        &:hover{
+                            background-color: whitesmoke;
+                            color: black;
+                            
+                        }
+                    }
+                    >ul{
+                        position: absolute;
+                        left: 0;
+                        top: 80px;
+                        /* background-color: yellow; */
+                        transition: 0.4s;
+                        opacity: 0;
+                        visibility: hidden;
+                        >li{
+                            height: auto;
+                            font-size: 18px;
+                            /* border: 1px solid darkorange; */
+                            
+                            >a{
+                                color: rgb(28, 27, 27);
+                                background-color: rgb(209, 214, 215);
+                                border: 1px solid rgb(94, 92, 92);
+                                width: 200px;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+                                transition: 0.4s;
+                                &:hover{
+                                    background-color: rgb(207, 247, 249);
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        .pic{
+            width: 200px;
+            height: 250px;
+            border: 5px ridge rgb(46, 45, 45);
+            margin: 30px 250px auto;
+            position: relative;
+            overflow: hidden;
+            &::after{
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.373);
+                transition: 1s;
+                opacity: 0;
+                top: 0;
+            }
+            
+            >img{
+                width: 100%;
+                height: 120%;
+                object-fit: cover;
+                transition: 1s;
+                position: absolute;
+                bottom: -20px;
+            }
+            >h2{
+                width: 100%;
+                font-size: 30px;
+                position: absolute;
+                bottom: 10px;
+                text-align: center;
+                transition: 0.6s;
+                z-index: 1;
+                color: whitesmoke;
+            }
+            .txt{
+                transition: 1s;
+                bottom: -200px;
+                left: 0;
+                /* border: 10px solid white; */
+                /* background-color: red; */
+                position: absolute;
+                height: auto;
+                width: 100%;
+                z-index: 2;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                text-align: center;
+                color: white;
+                padding: 10px;
+                >figcaption{
+                    font-style: italic;
+                }
+                >a{
+                    text-decoration: none;
+                    width: 70px;
+                    height: 50px;
+                    color: white;
+                    background-color: black;
+                }
+            }
+            &:hover{
+                >img{
+                    bottom: 0px;
+                }
+                >h2{
+                    bottom: 140px;
+                    color: white;;
+                }
+                &::after{
+                    opacity: 1;
+                }
+                .txt{
+                    bottom: 0;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+<nav class="menu">
+    <figure>
+        <img src="img/beach-logo.jpeg" alt="beach bey">
+    </figure>
+    <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">buy tickets</a>
+            <ul>
+                <li><a href="">submenu</a></li>
+                <li><a href="">submenu</a></li>
+                <li><a href="">Lorem ipsum dolor sit amet consectetur adipisicing.</a></li>
+                <li><a href="">submenu</a></li>
+                <li><a href="">submenu</a></li>
+            </ul>
+        </li>
+        
+        <li><a href="">contact us</a></li>
+        <li><a href="">questions</a></li>
+    </ul>
+</nav>
+<figure class="pic">
+    <img src="img/beach.jpg" alt="beach">
+    <h2>to the beach</h2>
+    <div class="txt">
+        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, non!</figcaption>
+        <a href="">book now</a>
+    </div>
+</figure>
+</body>
+
+</html>

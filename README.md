@@ -18,4 +18,4 @@
 
 - Role - Frontend
 
-- How to reach me : with my [instagram]() and [linkedin](https://www.linkedin.com/in/nicka-ghadiany/)
+- How to reach me : with my [instagram](https://www.instagram.com/nicka.ghadiany?igsh=MXEwMHhzMGsyazF6eg==) and [linkedin](https://www.linkedin.com/in/nicka-ghadiany/)

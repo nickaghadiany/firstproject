@@ -2,7 +2,7 @@
 
 **website to buy holiday tickets**
 
-<img width="509" alt="Image" src="https://github.com/user-attachments/assets/44c0e4e4-a6bf-4a7e-b695-d4095df6d5fd" />
+![viewfinal]<img width="509" alt="Image" src="https://github.com/user-attachments/assets/44c0e4e4-a6bf-4a7e-b695-d4095df6d5fd" />
 
 - [Demo Project](https://nickaghadiany.github.io/firstproject/)
 
